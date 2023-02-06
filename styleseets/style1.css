@@ -1,0 +1,278 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Red Hat Display';
+     font-size: 22px;
+ }
+
+ .nav-bar-logo img {
+     width: 50%;
+     flex-shrink: 2;
+ }
+
+ nav {
+     display: flex;
+     width: 65%;
+     margin: 3vh 10%;
+     justify-content: space-around;
+     text-align: center;
+     align-items: center;
+     font-size: larger !important;
+ }
+
+ a {
+     text-decoration: none;
+     color: #000;
+ }
+
+ .nav-one {
+     display: flex;
+     width: 50%;
+     justify-content: space-around;
+     flex-shrink: 1;
+ }
+
+ .nav-one-login {
+     visibility: hidden;
+ }
+
+ .nav-two {
+     display: flex;
+     width: 27%;
+     justify-content: space-around;
+ }
+
+ .button {
+     background-color: #5306c9;
+     color: #f1f2f6;
+     border: 1px solid #5306c9;
+     border-radius: 4px;
+     padding: 13px 13px;
+     font-size: 18px;
+     margin-top: 4px;
+ }
+
+ .input-button {
+     border: 1px solid #4b4b4b;
+     background: #4b4b4b;
+ }
+
+ .input-button :active {
+     border: 1px solid #4b4b4b;
+ }
+
+ .lighter {
+     background-color: #e4e1f6;
+     border: 1px solid #e4e1f6;
+     color: #5306c9;
+ }
+
+ .violet {
+     color: #5306c9;
+     letter-spacing: .7px;
+     font-size: 16px;
+ }
+
+ footer {
+     width: 100%;
+     font-family: 'Red Hat Display', sans-serif;
+     color: white;
+     background-color: #101d42;
+     padding: 5px;
+     margin-top: 80px;
+ }
+
+ li input {
+     background-color: #3e3e3e;
+     margin-top: 3%;
+     color: #e5e0f7;
+     border-radius: 2%;
+     padding: 0.5rem 1rem;
+ }
+
+ .footer-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+ .footer-container h3 {
+     font-weight: 550;
+     letter-spacing: 3px;
+ }
+
+ .logo {
+     width: 100%;
+ }
+
+ .footer-container>div {
+     margin: 1%;
+     padding: 1%;
+ }
+
+ .simple-text {
+     width: 100%;
+ }
+
+ .footer-container li {
+     color: #8d8b97;
+     list-style-type: none;
+     padding: 2% 0 2% 0;
+     cursor: pointer;
+ }
+
+ .footer-get-started-button {
+     font-size: 20px;
+     color: #fff;
+     width: max-content;
+ }
+
+ .footer-get-started-button>img {
+     width: 8%;
+     height: 100%;
+ }
+
+ .see-in-action {
+     position: relative;
+     bottom: 50px;
+     width: 40%;
+     border-radius: 10px;
+     width: 60%;
+     display: flex;
+     margin: auto;
+     background-color: #5306c9;
+     padding: 0.5% 3%;
+     justify-content: space-between;
+ }
+
+ .que {
+     text-align: center;
+     font-size: 25px;
+     font-weight: 400;
+ }
+
+ .see-in-action>div {
+     align-self: center;
+ }
+
+ .see-in-action-buttons {
+     display: flex;
+     width: 50%;
+     justify-content: space-around;
+ }
+
+ .see-in-action-buttons>div {
+     width: fit-content;
+     text-align: center;
+     padding: 4% 3%;
+     font-size: 18px;
+     border-radius: 5px;
+     margin: 4%;
+ }
+
+ .signup {
+     color: #5306c9;
+     background-color: #f5f6fa;
+ }
+
+ .schedule-demo {
+     color: #f5f6fa;
+     background-color: rgb(127, 106, 208);
+ }
+
+ footer h3 {
+     font-size: 20px !important;
+ }
+
+
+ .signup:hover,
+ .schedule-demo:hover {
+     cursor: pointer;
+ }
+
+ /* mobile device */
+ @media only screen and (max-width:767px) {
+     .see-in-action {
+         flex-direction: column;
+     }
+
+     .que {
+         width: 100%;
+     }
+
+     .see-in-action-buttons {
+         width: 100%;
+     }
+
+     .footer-container>div {
+         width: 40%;
+     }
+ }
+
+ /* tab size device */
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+     .footer-container>div {
+         width: 40%;
+     }
+ }
+
+ /* desktop  devices*/
+ @media only screen and (min-width:1025px) {
+     .footer-container>div {
+         width: 18%;
+     }
+
+     .footer-get-started {
+         margin-right: -10%;
+     }
+
+     .footer-container {
+         margin: 0 10% 0 10%;
+     }
+
+     .footer-container ul:first-of-type {
+         margin-right: -10%;
+     }
+ }
+
+ @media only screen and (max-width:1225px) {
+     nav {
+         width: 90%;
+         margin: 3vh 4%;
+     }
+
+     .nav-one {
+         width: 40%;
+     }
+
+     .nav-two {
+         width: 20%;
+     }
+ }
+
+ @media only screen and (max-width:1025px) {
+     nav {
+         width: 100%;
+         margin: 2vh auto;
+         flex-direction: column;
+         align-items: flex-start;
+         box-shadow: 0 4px 8px 0 rgba(86, 76, 177, 0.2), 0 6px 20px 0 rgba(53, 61, 176, 0.19);
+     }
+
+     .nav-one {
+         flex-direction: column;
+     }
+
+     .nav-one>div {
+         padding: 1vh 0;
+     }
+
+     .nav-two {
+         display: none;
+     }
+
+     .nav-one-login {
+         visibility: visible;
+     }
+ }

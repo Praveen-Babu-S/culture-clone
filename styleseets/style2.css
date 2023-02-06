@@ -1,0 +1,281 @@
+ hr {
+     position: relative;
+     top: 20px;
+     border: none;
+     height: 19px;
+     margin-bottom: 50px;
+     transform: rotate(5deg);
+     background-color: #e4e1f6;
+ }
+
+ .drive {
+     width: 70%;
+     margin: 3vh auto;
+     text-align: center;
+     letter-spacing: 0.4px;
+ }
+
+ .drive p {
+     margin: 0 2%;
+     padding: 2% 12%;
+     font-size: 16px;
+ }
+
+ .drive-two {
+     margin-top: -5%;
+     padding: 0 30%;
+     font-family: "Frank Ruhl Libre", Sans-serif;
+ }
+
+
+
+ .strike {
+     width: 80%;
+     margin: 10vh auto;
+     text-align: center;
+     letter-spacing: 0.4px;
+ }
+
+ .empower {
+     width: 100%;
+     padding-top: 1%;
+     text-align: center;
+     background-color: #F0EFEF;
+ }
+
+ .empower-one {
+     width: 70%;
+     display: flex;
+     text-align: center;
+     letter-spacing: 0.4px;
+     margin: 5vh auto;
+ }
+
+ .empower-one-one {
+     margin-top: 20%;
+     width: 30%;
+     border: 1px solid rgb(0, 4, 128);
+ }
+
+ .empower-one-one ul {
+     background-color: #ffffff;
+     border: 2px solid rgb(128, 0, 0);
+ }
+
+ .empower-one-two {
+     position: relative;
+     top: 40px;
+     background-color: #ffffff;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .empower-one-two img {
+     top: -23px;
+     z-index: 1;
+     width: 50%;
+     height: auto;
+ }
+
+ h4 {
+     font-size: 24px;
+     font-weight: 20;
+     padding-bottom: 5vh;
+     margin-top: 10vh;
+ }
+
+ h3 {
+     font-size: 33px;
+     font-weight: 20;
+     /* padding-bottom: 5vh; */
+     margin-top: 5vh;
+ }
+
+ .strike-one img {
+     width: 90%;
+ }
+
+
+ .different {
+     width: 80%;
+     margin: 7vh auto;
+     text-align: center;
+     letter-spacing: 0.2px;
+ }
+
+ sp {
+     background: #abadf29b;
+     font-size: 40px;
+     font-weight: 420;
+ }
+
+ .different h3 {
+     font-size: 35px;
+     font-weight: 20;
+     padding-bottom: 3vh;
+ }
+
+ .different div {
+     text-align: justify;
+ }
+
+ .different-one {
+     display: flex;
+     align-items: center;
+     /* border: 1px solid red; */
+
+ }
+
+ .different-one-one {
+     width: 50%;
+     justify-content: center;
+     padding: 3%;
+ }
+
+ .different-one-one h5 {
+     font-size: 20px;
+     font-weight: 650;
+     padding-bottom: 3vh;
+ }
+
+ .different-one-one p {
+     font-size: 16px;
+     font-weight: 350;
+     text-align: center;
+ }
+
+ .different-one-two {
+     width: 70%;
+ }
+
+ .different-one-two img {
+     width: 100%;
+     /* margin-top: auto !important; */
+ }
+
+ .different-two {
+     display: flex;
+     justify-content: space-around;
+     margin: 2%;
+     /* border: 1px solid green; */
+ }
+
+ .different-two-one h5 {
+     font-size: 20px;
+     font-weight: 420;
+     padding: 5% 3%;
+ }
+
+ .different-two-one p {
+     text-align: left;
+     font-size: 16px;
+     padding: 5% 3%;
+ }
+
+
+
+ .baised {
+     width: 70%;
+     margin: 10vh auto;
+     text-align: center;
+ }
+
+ .baised-one {
+     color: #5306c9;
+     font-size: 14px;
+     letter-spacing: 1px;
+ }
+
+ .baised-two {
+     display: flex;
+     justify-content: space-around;
+     margin: 43px auto;
+     flex-wrap: wrap;
+ }
+
+ .baised-two div {
+     width: 20%;
+     padding: 3%;
+ }
+
+ .baised-two div img {
+     width: 100%;
+     height: 100%;
+ }
+
+ .person-icon {
+     display: flex;
+     /* border: 1px solid red; */
+     justify-content: space-around;
+     align-items: center;
+     padding: 1vh 8%;
+ }
+
+ .icon img {
+     border: 0px solid #FFFFFF;
+     border-radius: 50%;
+     width: 6vh;
+ }
+
+ .text {
+     margin-left: 1%;
+     letter-spacing: .7px;
+     font-size: 16px;
+ }
+
+
+ @media only screen and (min-width: 767px) {
+     .drive-pic img {
+         content: url("../images/culture.png");
+         margin: 2% auto;
+         width: 95%;
+         height: auto;
+     }
+ }
+
+ @media only screen and (max-width:762px) {
+     .baised-two div {
+         width: 30%;
+     }
+
+     .different-one,
+     .different-two {
+         flex-direction: column;
+         align-items: center;
+         text-align: left;
+     }
+
+     .different-one-one,
+     .different-one-two,
+     .different-two-one {
+         width: 90%;
+     }
+
+     .different-two {
+         display: none;
+     }
+
+     .empower-one {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .mobile-hide {
+         display: none;
+     }
+
+     .empower-one-one {
+         display: none;
+     }
+
+     .drive-pic img {
+         content: url("../images/culture1.png");
+         margin: 2% auto;
+         width: 110%;
+         overflow: hidden;
+     }
+
+     /* .different-two-one {
+         display: none;
+     } */
+
+ }
